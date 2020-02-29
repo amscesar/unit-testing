@@ -36,8 +36,5 @@ public class MyApplicationMockedTest {
         Message dummy = new Message("Hello world!!!", "ams@cesar.school");
         when(service.sendMessage(anyString(), anyString())).thenReturn(true);
         Assertions.assertTrue(application.processMessage(dummy));
-
-
         }
-
     }
